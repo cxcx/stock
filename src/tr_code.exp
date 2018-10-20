@@ -1,0 +1,5 @@
+#!/usr/bin/expect
+
+spawn scp -rf . cx@192.168.0.109:~/work/stock/src
+expect "*word:*"
+send "1"
